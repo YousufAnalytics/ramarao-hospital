@@ -50,7 +50,7 @@ export default function MobileMenu({ navItems }: MobileMenuProps) {
 
       {open && (
         <nav
-          className="absolute right-0 top-16 z-50 w-72 rounded-2xl border bg-white shadow-xl"
+          className="fixed inset-x-0 top-20 z-50 bg-white border-t shadow-lg"
           aria-label="Mobile Navigation"
         >
           <div className="flex flex-col p-4">
