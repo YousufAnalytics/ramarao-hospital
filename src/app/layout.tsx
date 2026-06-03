@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { Inter } from "next/font/google";
+import MobileEmergencyCall from "@/components/MobileEmergencyCall";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,9 +34,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${inter.className} h-full antialiased overflow-x-hidden`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col pb-20 md:pb-0">
         <Header />
         {children}
+        <MobileEmergencyCall />
       </body>
     </html>
   );

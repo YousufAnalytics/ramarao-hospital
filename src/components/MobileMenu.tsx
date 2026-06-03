@@ -59,7 +59,7 @@ export default function MobileMenu({ navItems }: MobileMenuProps) {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="border-b py-3 text-slate-700"
+                className="border-b py-3 text-slate-700 border-gray-300"
               >
                 {item.label}
               </Link>
